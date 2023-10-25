@@ -1,0 +1,30 @@
+body {
+    height: 100px;
+    background-image: linear-gradient(to right, red, blue);
+    font-size: 16px; /* You can adjust the font size as needed */
+  }
+  
+  /* Style the container with an ID of "CContainer" */
+  #CContainer {
+    height: 600px;
+    width: 400px;
+    background-color: rgba(168, 80, 255, 0.5); /* Adjust the alpha value as needed */
+    border-radius: 30px;
+    box-shadow: 10px 5px 25px black;
+  }
+  
+  /* Style input elements */
+  input {
+    width: 60%;
+    margin: auto; /* Use a colon (:) instead of an equal sign (=) for property-value pairs */
+    padding: 20px;
+    padding-right: 50px;
+    font-size: 18px; /* You can adjust the font size as needed */
+  }
+  
+  /* Style button elements */
+  button {
+    background-color: cyan;
+    color: #000000; /* Use 'color' to specify text color */
+    border: 10px solid transparent; /* Add 'solid' to specify the border style */
+  }

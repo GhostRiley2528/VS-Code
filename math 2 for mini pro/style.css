@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+   cursor: crosshair;
+   text-decoration-color: ghostwhite;
+   background-color: rgb(151, 202, 70);
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin: inherit;
+    text-decoration-color: navy;
+    cursor:cell;
+}
