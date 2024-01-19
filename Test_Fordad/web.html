@@ -1,51 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Include the theme styles -->
     <title>Helmet Cases</title>
+
+    <style>
+        /* Slideshow Styles */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        /* Navigation dots styles */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Additional styles for active dot */
+        .active {
+            background-color: #717171;
+        }
+    </style>
 </head>
-<body>
+
+<body class="theme-orange-white-blue">
     <header>
         <h1>Helmet Cases</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about-us">About Us</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#returns">Returns</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="http://127.0.0.1:5500/Returnpolicy/RP.html" target="_blank">Return</a></li>
         </ul>
     </nav>
 
-    <section id="about-us" class="content">
-        <h2>About Us</h2>
-        <p>Welcome to Helmet Cases! We are dedicated to providing high-quality and stylish cases for your motorcycle helmets. Our mission is to ensure the safety and protection of your valuable gear while adding a touch of elegance to your storage solutions.</p>
-    </section>
-
     <section id="products" class="content">
         <h2>Products</h2>
-        <p>Explore our range of helmet cases designed to keep your motorcycle helmets safe and secure. Each case is crafted with precision and style to meet the needs of every rider.</p>
+        <p>Explore our range of helmet cases designed to keep your motorcycle helmets safe and secure. Each case is
+            crafted with precision and style to meet the needs of every rider. Introducing our Premium Helmet Cases:</p>
+        <div class="slideshow-container">
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <h2>Slide 1</h2>
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/51wO0gAwd1L._AC_UF894,1000_QL80_.jpg"
+                                        alt="height=30px" width="30px">
+                                </div>
+                            </div>
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <h2>Slide 2</h2>
+                                    <img
+                                        src="https://www.betterdisplaycases.com/cdn/shop/products/Motorcycle-Helmet-Display-Case-A024-B-BDS-2_1024x.jpg?v=1649070850"
+                                        alt="height=30px" width="30px">
+                                </div>
+                            </div>
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <h2>Slide 3</h2>
+                                    <img
+                                        src="https://images.footballfanatics.com/florida-state-seminoles/florida-state-seminoles-golden-classic-logo-mini-helmet-display-case_pi1426000_ff_1426047_xl.jpg?_hv=2&w=600"
+                                        alt="height=30px" width="30px">
+                                </div>
+                            </div>
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <h2>Slide 4</h2>
+                                    <img
+                                        src="https://images.hindustantimes.com/auto/img/2021/12/18/1600x900/Benelli_1639818323529_1639818331803.jpeg"
+                                        alt="height=30px" width="30px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+            </div>
+        </div>
 
         <div class="products">
             <!-- Product listings go here -->
+            <div class="product">
+                <img
+                    src="https://m.media-amazon.com/images/I/51wO0gAwd1L._AC_UF894,1000_QL80_.jpg"
+                    alt="Helmet Case 1">
+                <h3>Premium Helmet Case 1</h3>
+                <p>Keep your helmet safe and stylish with our Premium Helmet Case 1. Crafted with precision to meet the
+                    needs of every rider.</p>
+                <button onclick="addToCart('Premium Helmet Case 1')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img
+                    src="https://www.betterdisplaycases.com/cdn/shop/products/Motorcycle-Helmet-Display-Case-A024-B-BDS-2_1024x.jpg?v=1649070850"
+                    alt="Helmet Case 2">
+                <h3>Premium Helmet Case 2</h3>
+                <p>Secure your helmet with style! Our Premium Helmet Case 2 is designed to showcase the elegance of
+                    your valuable helmet.</p>
+               <div class="B1"><button onclick="addToCart('Premium Helmet Case 2')">Add to Cart</button></div>
+            </div>
+            <!-- Add more product listings as needed -->
         </div>
-    </section>
-
-    <section id="returns" class="content">
-        <h2>Returns</h2>
-        <p>We want you to be completely satisfied with your purchase. If you are not happy with your helmet case, you can return it within 30 days for a full refund. Please check our <a href="#returns">Returns Policy</a> for more details.</p>
     </section>
 
     <section id="contact-us" class="content">
         <h2>Contact Us</h2>
-        <p>Have questions or need assistance? Feel free to reach out to our customer support team. We are here to help!</p>
+        <p>Your feedback matters! Whether you have inquiries, need assistance, or simply want to connect, we're here to
+            help. Drop us a line via email at <strong>info@example.com</strong> for general queries or
+            <strong>customer_service@example.com</strong> for dedicated customer support. Should you prefer speaking
+            with us, feel free to call General Inquiry Phone: <strong>[Your General Inquiry Phone Number]</strong> or
+            Customer Service Phone: <strong>[Your Customer Service Phone Number]</strong>.</p>
+
+        <p>For a more personal touch, visit our office located at <strong>[Company Name, Street Address, City, State,
+                Zip Code]</strong>. Our team at WEB is dedicated to ensuring your satisfaction and providing the
+            assistance you deserve. We appreciate your trust in our services.</p>
     </section>
 
-    <footer>
+    <section id="about-us" class="content">
+        <h2>About Us</h2>
+        <p>Welcome to <strong>WEB</strong>, where craftsmanship meets protection. We take pride in being the premier
+            provider of helmet showpiece cases. At <strong>WEB</strong>, we understand the significance of your
+            motorcycle helmet, not just as protective gear but as a symbol of your passion for riding.</p>
+
+        <p>Our dedicated team at <strong>WEB</strong> is committed to creating high-quality, stylish, and durable helmet
+            showpiece cases. Each case is crafted with precision and care to ensure the safety and showcase the elegance
+            of your valuable helmet. We believe in merging functionality with aesthetics, providing you with the perfect
+            storage solution that reflects your unique style.</p>
+
+        <p>With a focus on quality and customer satisfaction, <strong>WEB</strong> strives to exceed your expectations.
+            Thank you for choosing <strong>WEB</strong> – your trusted partner in helmet showpiece cases.</p>
+    </section>
+</div>
+    <footer>        
         <p>&copy; 2024 Helmet Cases</p>
     </footer>
+
+    <script>
+        function setTheme(theme) {
+            document.body.className = theme;
+        }
+    </script>
 </body>
 </html>

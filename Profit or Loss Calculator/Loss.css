@@ -1,13 +1,18 @@
 body{
   background: #80e4f1;
   color: #07393C;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serifS;
 }
 .con{
-  text-align: left;
+  text-align: center;
 }
-.Calculator{
+.Cal{
     text-align: center; 
 }
 cursor{
   cursor: crosshair;
+}
+footer{
+  
 }
