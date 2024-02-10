@@ -16,3 +16,11 @@ cursor{
 H1{
   size: 10000px;
 }
+button{
+  background-color: #07393C;
+  text-decoration: dotted;
+  color:  #F0F0F0;
+}
+input{
+  background-color: rgb(222, 218, 218);
+}
