@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Profit or Loss Calculator</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Loss.css">
-    </head>
-    <body>
-        <div align ="center">
-        <div class="con">
-      <H3>What is a Profit and Loss Calculator</H3>
-        <p>tool that displays the profit or loss for the given cost price and selling price.</p>
-        <img src="https://img.freepik.com/free-vector/business-investors-trying-stop-arrow-going-down-with-drop-arrow-chart-stock-market-crisis-panic-due-epidemic_1150-63939.jpg?size=626&ext=jpg&ga=GA1.1.733320184.1707466122&semt=ais">
-   <H3>What are the requirements?</H3>
-
-   <p>You only need the Cost price and the Selling Price to calculate your Profit or Loss.</p>
-   <br>
-<h3>What is Cost Price and Selling Price?</h3>
-<p> Cost Price -  The amount paid for a product or commodity to purchase is called a cost price. Also, denoted as C.P .</p>
-<P>Selling Price - The amount for which the product is sold is called the Selling Price. Also, denoted as S.P .</P>
-<a href="https://www.vedantu.com/maths/profit-and-loss" target="_blank">Click me to know more about SP,CP,Loss and Profit</a>
-<br>
-<H1><B>PROFIT / LOSS</B></H1>
-</div>
-<div class="Calc">
-<H1>C.P</H1>
-<input type="number" id="CP1" placeholder= "Enter the C.P">
-<H1>S.P</H1>
-
-<input type="number" id="SP1" placeholder= "Enter the S.P">
-
-<button id="Calculate" onclick=cal()>Calculate</button>
-
-        <script src="app.js" async defer></script>
-
-        <H3>Profit  /  Loss</H3>
-        <input type="text"id= "123" placeholder="Result will be shown here">
-
-        <button id="profit" onclick="profit()">Profit</button>
-        <input type="number" id="profitT">
-        
-        <button id="loss" onclick="loss()">Loss</button>
-        <input type="number" id="lossT">
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit or Loss Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Profit and Loss Calculator</h1>
+        </header>
+        <section class="content">
+            <div class="intro">
+                <h2>What is a Profit and Loss Calculator?</h2>
+                <p>A tool that displays the profit or loss for the given cost price and selling price.</p>
+            </div>
+            <div class="image">
+                <img src="https://img.freepik.com/free-vector/business-investors-trying-stop-arrow-going-down-with-drop-arrow-chart-stock-market-crisis-panic-due-epidemic_1150-63939.jpg?size=626&ext=jpg&ga=GA1.1.733320184.1707466122&semt=ais" alt="Profit and Loss">
+            </div>
+            <div class="requirements">
+                <h2>What are the requirements?</h2>
+                <p>You only need the Cost price and the Selling Price to calculate your Profit or Loss.</p>
+            </div>
+            <div class="definitions">
+                <h2>Cost Price and Selling Price</h2>
+                <p><strong>Cost Price (C.P):</strong> The amount paid for a product or commodity to purchase.</p>
+                <p><strong>Selling Price (S.P):</strong> The amount for which the product is sold.</p>
+                <p>For more information, <a href="https://www.vedantu.com/maths/profit-and-loss" target="_blank">click here</a>.</p>
+            </div>
+        </section>
+        <section class="calculator">
+            <h2>Profit / Loss Calculator</h2>
+            <div class="input-fields">
+                <label for="CP1">Cost Price (C.P):</label>
+                <input type="number" id="CP1" placeholder="Enter the C.P">
+                <label for="SP1">Selling Price (S.P):</label>
+                <input type="number" id="SP1" placeholder="Enter the S.P">
+            </div>
+            <div class="buttons">
+                <button id="Calculate" onclick="cal()">Calculate</button>
+                <input type="text" id="123" placeholder="Result will be shown here">
+                <button id="profit" onclick="profit()">Profit</button>
+                <input type="number" id="profitT" placeholder="Profit">
+                <button id="loss" onclick="loss()">Loss</button>
+                <input type="number" id="lossT" placeholder="Loss">
+            </div>
+        </section>
         <footer>
-            <br>
-            <br>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
         </footer>
-    </body>
+    </div>
+    <script src="app.js" async defer></script>
+</body>
 </html>
