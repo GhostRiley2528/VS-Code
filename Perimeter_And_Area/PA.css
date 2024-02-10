@@ -1,8 +1,9 @@
 body{
-
+     font-family: 'Comic Neue';font-size: 22px;
+    cursor: crosshair;
 }
 button{
-
+    font-family: 'Comic Neue';font-size: 18px;
 }
 img{
     height: 300px;
